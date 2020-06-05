@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ClarkSustainableResources</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="dialog_title">Welcome to Sustainable Clark!</string>
+    <string name="dialog_message">What is Sustainable Clark? It\’s you. It’s me.
+        It\’s every one of us. We are all able to make a difference in the world — everything you do,
+        every day, matters.
+        \n\nNavigate through the app by clicking the menu at the top right.
+        \n\nTo see different resources on the map, click on <b>Sustainable Map</b>.
+        \n\nTo see a list of all resources by category, click on the <b>Resources List</b>.
+        \n\nTo help our app grow, click on <b>Add Resource</b> and go to the location where the resource is found.
+    </string>
+
+    <string name="sign_out_message_title">Are you sure you want to sign out?</string>
+    <string name="sign_out_message">You will be redirected to the sign-in page and
+        will have the option to sign back into the app</string>
+
+    <string name="ok">Continue</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="help_information">
+        We hope you have enjoyed using the app! If you have run into any issues or have questions
+        regarding this app or sustainability at Clark feel free to email Jenny Isler - Director of
+        Sustainability at Clark.
+    </string>
+
+    <string name="creator_information">
+        This app was developed by two Clark Computer Science students in the fall of 2019. Charlie
+        Poff-Webster (\’20) and Trevor Erwin-Stevens (\’20).
+    </string>
+
+    <string name="reported_user">
+        You have been flagged and are no longer allowed to add resources. For more information please
+        email jisler@clarku.edu
+    </string>
+
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+
+</resources>

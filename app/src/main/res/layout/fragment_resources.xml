@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F7DE"
+    tools:context=".ResourcesFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/water_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <!-- ANDROID SHAPE HERE, BACKGROUND NOT TRANSPARENT-->
+                    <ImageButton
+                        android:id="@+id/water_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/water_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/water_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Water Bottle Refill"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/water_resources_recycler"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/recycling_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/recycle_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/recycle_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/recycler_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Recycling Bins"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/compost_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/compost_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/compost_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/compost_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Compost Bins"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/compost_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/transportation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/transportation_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/transportation_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/transportation_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Transportation"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/transportation_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/neutral_bathroom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/neutral_bathroom_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/neutral_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/gendern_bathroom_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Gender Neutral Bathrooms"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/neutral_bathroom_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/green_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/green_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/green_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/green_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Greenspaces"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/green_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/other_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/other_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/plus_symbol"
+                        android:background="#00000000"
+                        android:text="Button" />
+
+                    <LinearLayout
+                        android:id="@+id/other_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/other_symbol" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Other"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/other_resources_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

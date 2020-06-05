@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">#c5fbb1</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/grey_500</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+
+    </style>
+
+    <!-- Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme -->
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_black_24dp</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">"Lala"</item>
+
+    </style>
+
+    <style name="AnimationPopup">
+        <item name="android:windowEnterAnimation">@animator/appear</item>
+        <item name="android:windowExitAnimation">@animator/disappear</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#000000</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Used for the background -->
+        <item name="android:background">#E5F7DE</item>
+    </style>
+
+</resources>

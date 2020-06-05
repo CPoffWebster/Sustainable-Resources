@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F7DE"
+    tools:context=".DetailFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/resource_picture"
+                android:layout_width="180dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clark_sustainability_icon" />
+
+            <TextView
+                android:id="@+id/resource_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resource_picture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/resource_category"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resource_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/resource_location"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resource_category"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/resource_details"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resource_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_below="@id/resource_details"
+                android:id="@+id/comment_layout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/leave_nice_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#bebebe"
+                    android:text="Are you using this resource? Let others know! Remember to keep comments respectful."
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/comment_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Comments"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_coment_text"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:hint="Add a public comment..."
+                        android:maxLength="200"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/add_comment_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/submit_icon_comment" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comments_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

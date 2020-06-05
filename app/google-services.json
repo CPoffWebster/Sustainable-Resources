@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "75157297395",
+    "firebase_url": "https://clark-sustainable-resources.firebaseio.com",
+    "project_id": "clark-sustainable-resources",
+    "storage_bucket": "clark-sustainable-resources.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75157297395:android:8bf05d5d6352c4420a3f86",
+        "android_client_info": {
+          "package_name": "com.example.clarksustainableresources"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75157297395-31g5vi2sg8tcvdh66t6qlusdnjpbbb60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRdMFWseDzDqEABhb0Kua4b-8rPFta2yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75157297395-31g5vi2sg8tcvdh66t6qlusdnjpbbb60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

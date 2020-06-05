@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapsFrag">
+
+    <fragment
+        android:id="@+id/detailFrag"
+        android:name="com.example.clarksustainableresources.DetailFrag"
+        android:label="Resource Information"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFrag_to_resourcesFrag"
+            app:destination="@id/resourcesFrag" />
+        <action
+            android:id="@+id/action_clearBack"
+            app:destination="@id/resourcesFrag"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resourcesFrag"
+        android:name="com.example.clarksustainableresources.ResourcesFrag"
+        android:label="Resources List"
+        tools:layout="@layout/fragment_resources">
+        <action
+            android:id="@+id/action_resourcesFrag_to_mapsFrag"
+            app:destination="@id/mapsFrag"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:exitAnim="@anim/slide_screen_out_left"
+            app:popEnterAnim="@anim/slide_screen_out_right"
+            app:popExitAnim="@anim/slide_left_to_right" />
+        <action
+            android:id="@+id/action_resourcesFrag_to_detailFrag"
+            app:destination="@id/detailFrag"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:exitAnim="@anim/slide_screen_out_left"
+            app:popEnterAnim="@anim/slide_screen_out_right"
+            app:popExitAnim="@anim/slide_left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFrag"
+        android:name="com.example.clarksustainableresources.MapsFrag"
+        android:label="Resources Map"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFrag_to_detailFrag"
+            app:destination="@id/detailFrag"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:exitAnim="@anim/slide_screen_out_left"
+            app:popEnterAnim="@anim/slide_screen_out_right"
+            app:popExitAnim="@anim/slide_left_to_right" />
+        <action
+            android:id="@+id/action_mapsFrag_self"
+            app:destination="@id/mapsFrag" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_resourcesFrag"
+        app:destination="@id/resourcesFrag"
+        app:enterAnim="@anim/slide_right_to_left"
+        app:exitAnim="@anim/slide_screen_out_left"
+        app:popEnterAnim="@anim/slide_screen_out_right"
+        app:popExitAnim="@anim/slide_left_to_right" />
+    <fragment
+        android:id="@+id/addResourceFrag"
+        android:name="com.example.clarksustainableresources.AddResourceFrag"
+        android:label="Add Resource"
+        tools:layout="@layout/fragment_add_resource">
+        <action
+            android:id="@+id/action_addResourceFrag_to_mapsFrag"
+            app:destination="@id/mapsFrag"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:exitAnim="@anim/slide_screen_out_left"
+            app:popEnterAnim="@anim/slide_screen_out_right"
+            app:popExitAnim="@anim/slide_left_to_right" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_addResourceFrag"
+        app:destination="@id/addResourceFrag"
+        app:enterAnim="@anim/slide_right_to_left"
+        app:exitAnim="@anim/slide_screen_out_left"
+        app:popEnterAnim="@anim/slide_screen_out_right"
+        app:popExitAnim="@anim/slide_left_to_right" />
+    <action
+        android:id="@+id/action_global_mapsFrag"
+        app:destination="@id/mapsFrag"
+        app:enterAnim="@anim/slide_right_to_left"
+        app:exitAnim="@anim/slide_screen_out_left"
+        app:popEnterAnim="@anim/slide_screen_out_right"
+        app:popExitAnim="@anim/slide_left_to_right"/>
+    <fragment
+        android:id="@+id/helpFrag"
+        android:name="com.example.clarksustainableresources.HelpFrag"
+        android:label="Information"
+        tools:layout="@layout/fragment_help" />
+    <action
+        android:id="@+id/action_global_helpFrag"
+        app:destination="@id/helpFrag"
+        app:enterAnim="@anim/slide_right_to_left"
+        app:exitAnim="@anim/slide_screen_out_left"
+        app:popEnterAnim="@anim/slide_screen_out_right"
+        app:popExitAnim="@anim/slide_left_to_right" />
+</navigation>
